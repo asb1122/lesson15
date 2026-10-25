@@ -1,6 +1,6 @@
 # lesson15
 
-юнит файл для systemd сервиса
+systemd сервис
 ````
 artsiom@ubundu26:/$ cat /etc/systemd/system/app15.service 
 [Unit]
@@ -20,7 +20,7 @@ RestartSec=5
 WantedBy=multi-user.target
 ````
 
-сам app.py
+сам app.py в /opt/app15/
 ````
 artsiom@ubundu26:/$ ll -la /opt/app15/
 total 16
@@ -71,3 +71,16 @@ sudo rm -f /etc/nginx/sites-enabled/default
 sudo nginx -t
 
 sudo systemctl reload nginx
+
+проверка на http://192.168.2.105/
+
+<img width="680" height="467" alt="app15-1" src="https://github.com/user-attachments/assets/d8a604c2-b48c-42dd-8368-94c305cd7253" />
+
+<img width="951" height="411" alt="app15-2" src="https://github.com/user-attachments/assets/78857440-392d-49af-a92e-b96f63ad9172" />
+
+<img width="517" height="204" alt="app15-3" src="https://github.com/user-attachments/assets/185545b9-6bb6-4022-9f0f-411b4bbcfd41" />
+
+<img width="1168" height="769" alt="app15-4" src="https://github.com/user-attachments/assets/0558aae2-fb06-419d-884e-d715521347e2" />
+
+
+
