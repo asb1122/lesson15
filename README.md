@@ -65,6 +65,9 @@ server {
 ````
 
 sudo ln -sf /etc/nginx/sites-available/app15 /etc/nginx/sites-enabled/app15
+
 sudo rm -f /etc/nginx/sites-enabled/default
+
 sudo nginx -t
+
 sudo systemctl reload nginx
